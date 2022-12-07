@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.本學期活動教學方式:"
+        android:id="@+id/text_question_01"
+        android:textSize="18sp"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_a01"
+        android:text="實務經驗分享"
+        android:textSize="16sp"
+        android:textColor="#A3A3A3"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_a02"
+        android:text="操作實習"
+        android:textSize="16sp"
+        android:textColor="#A3A3A3"
+        android:layout_marginLeft="10dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_a03"
+        android:text="課堂講解"
+        android:textSize="16sp"
+        android:textColor="#A3A3A3"
+        android:layout_marginLeft="10dp"
+        />
+
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/checkbox_a04"
+          android:text="校外體驗參訪"
+          android:textSize="16sp"
+          android:textColor="#A3A3A3"
+          android:layout_marginLeft="10dp"
+          />
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_rightUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右上"
+        app:layout_constraintBottom_toBottomOf="@+id/button_back"
+        app:layout_constraintStart_toEndOf="@+id/button_back" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上一步"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="@+id/button_next" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_cancle" />
+
+    <Button
+        android:id="@+id/button_leftUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左上"
+        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        app:layout_constraintStart_toStartOf="@+id/button_cancle" />
+
+    <Button
+        android:id="@+id/button_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="置中"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_leftUp25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左上25%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/button_centerTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="置中偏上"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/button_rightDown75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右下75%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v01end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h01_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp" />
+
+    <TextView
+        android:id="@+id/textView_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="帳號:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v01"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h01" />
+
+    <TextView
+        android:id="@+id/textView_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="壹"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v01end"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h01_end" />
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密碼:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v01"
+        app:layout_constraintTop_toBottomOf="@+id/textView_account" />
+
+    <EditText
+        android:id="@+id/editTextText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:hint="請輸入密碼"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_password"
+        app:layout_constraintStart_toEndOf="@+id/textView_account" />
+
+    <EditText
+        android:id="@+id/editTextText_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:hint="請輸入帳號"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_account"
+        app:layout_constraintStart_toEndOf="@+id/textView_password" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_p01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

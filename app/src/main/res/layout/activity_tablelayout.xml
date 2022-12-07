@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+ <TableRow>
+
+     <TextView
+         android:id="@+id/textview1_1"
+         android:text="遊戲名稱"
+         android:padding="4dp"
+         android:textColor="#000000"
+         android:background="#8BC34A"
+         />
+     <TextView
+         android:id="@+id/textview1_2"
+         android:text="遊戲版本"
+         android:padding="4dp"
+         android:background="#2196F3"
+         />
+     <TextView
+         android:id="@+id/textview1_3"
+         android:text="手機系統版本"
+         android:padding="4dp"
+         android:textColor="#000000"
+         android:background="#F44336"
+     />
+
+ </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textview2_1"
+            android:text="遊戲名稱"
+            android:padding="4dp"
+            android:textColor="#000000"
+
+            />
+        <TextView
+            android:id="@+id/textview2_2"
+            android:text="遊戲版本"
+            android:padding="4dp"
+
+            />
+        <TextView
+            android:id="@+id/textview2_3"
+            android:text="手機系統版本"
+            android:padding="4dp"
+            android:textColor="#000000"
+
+            />
+
+    </TableRow>
+</TableLayout>
